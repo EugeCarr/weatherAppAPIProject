@@ -1,1 +1,4 @@
 weatherApiTask/
+.env
+
+__pycache__
