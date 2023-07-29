@@ -14,8 +14,7 @@ def getWeatherOfThreeRandomCities() -> dict:
         ("Cardiff", "Wales", "GB"),
         ("Edinburgh", "Scotland", "GB"),
         ("Copenhagen", "Copenhagen", "DK"),
-        ("Helsinki", "Helsinki", "NO"),
-        ("Sydney", "Sydney", "FR"),
+        ("Sydney", "Sydney", "AU"),
     ]      
     random_3_cities = [random.choice(list_of_locations) for i in range(3)]
     print(random_3_cities)

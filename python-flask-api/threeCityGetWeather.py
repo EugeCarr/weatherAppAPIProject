@@ -25,7 +25,11 @@ def getWeatherOfThreeCities(cities) -> dict:
         data = response.read()
         dictionary_result = json.loads(data)
         # print(f'lattitude: {dictionary_result[0]["lat"]} longitude: {dictionary_result[0]["lon"]}')
-        city_coords[city[0]] = (dictionary_result[0]["lat"], dictionary_result[0]["lon"])
+        try: 
+            city_coords[city[0]] = (dictionary_result[0]["lat"], dictionary_result[0]["lon"])
+        except IndexError:
+            print(city[0])
+            break
 
 
     weatherHourlyForecastBaseUrl = "http://api.openweathermap.org/data/2.5/forecast?"
