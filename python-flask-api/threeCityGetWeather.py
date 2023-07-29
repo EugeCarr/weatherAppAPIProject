@@ -4,11 +4,7 @@ import urllib.request, json
 from decouple import config
 from typing import List
 
-threeCities = [
-    ("London", "England", "GB"),
-    ("New_York_City", "New_York", "US"),
-    ("Tokyo", "Tokyo", "JP")
-]
+
 
 
 def getWeatherOfThreeCities(cities) -> dict:
@@ -46,5 +42,4 @@ def getWeatherOfThreeCities(cities) -> dict:
 
     return city_temps
 
-test = getWeatherOfThreeCities(cities=threeCities)
-print(str(test))
+
